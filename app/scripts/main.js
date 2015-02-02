@@ -39,6 +39,8 @@ console.log('The Iron Yard Rocks');
 // };
 
 
+
+//Coding that uses the "for" loop to access an array of members of my family
 var i;
 var myFamily = ["Mike", "Bindy", "Shane", "Chance", "Tara"];
 for (i = 0; i < myFamily.length; i++) {
@@ -46,10 +48,17 @@ for (i = 0; i < myFamily.length; i++) {
 console.log (myFamily[i]);
 };
 
+//Now sort the myFamily array alphabetically
+myFamily.sort();        
+console.log (myFamily);
+
+//Now sort the myFamily array reverse-alphabetically.
+myFamily.sort();   
+myFamily.reverse();     
+console.log (myFamily);
 
 
-
-
+//Coding that accesses objects inside an array and prints out by object number.
 var familyMember = [
 	{
 	firstName: "Mike",
@@ -81,7 +90,7 @@ var familyMember = [
 
 	{
 	firstName: "Tara",
-	lastName: "Carter",
+	lastName: "Blatt Carter",
 	age: 35,
 	role: "youngest child"
 	},
@@ -96,14 +105,34 @@ console.log (familyMember[4].firstName + " " + familyMember[4].lastName + " is "
 
 
 
-shane.random = function (min, max) {
-                if (max == null) {
-                        max = min;
-                        min = 0;
-                }
-    return min + Math.floor(Math.random() * (max - min + 1));
+
+//Function that returns brothers + a string of stuff 
+var a = "Shane";
+var b = "Chance";
+var x = function (a, b) {
+    return a + " and " + b + " are brothers, just two years apart";
 };
+var brothers = x(a, b);
+console.log (brothers);
 
 
+//Function that returns siblings array in reverse
+var siblings = ["Shane", "Chance", "Tara"];
+	siblings.reverse();
+    console.log (siblings);     
+
+//Function that returns siblings array in reverse
+var parents = ["Mike", "Bindy"];
+	parents.reverse();
+    console.log (parents);   
 
 
+//Function that spits back a random number in the button. Oh what fun!
+function myFunction() {
+    document.getElementById("blattMath").innerHTML = ((Math.random() * 10) + 1);
+}
+
+//Function that says something
+function greetings() {
+       alert("Mike, Bindy, Shane, Chance and Tara");
+      };
