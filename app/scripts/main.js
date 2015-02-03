@@ -1,49 +1,17 @@
-console.log('The Iron Yard Rocks');
-
-// var tim = {};
-// tim.now = function (arr) {
-//         return new Date().getTime();
-//         console.log(tim);
-// };
-
-// // Greeting Function
-// tim.greeting = function (message) {
-
-//         // Check for Time of Day
-//         var time = new Date(),
-//                         initial_greeting = '',
-//                         time_hours = time.getHours(),
-//                         final_greeting;
-
-//         if (time_hours < 12) {
-//                 initial_greeting = 'Good Morning';
-//         } else if (time_hours >= 12 && time_hours <= 17) {
-//                 initial_greeting = 'Good Afternoon';
-//         } else if (time_hours > 17 && time_hours <= 24) {
-//                 initial_greeting = 'Good Evening';
-//         }
-
-//         final_greeting = (message != null) ? initial_greeting + ', ' + message : initial_greeting;
-
-//         return final_greeting;
-// };
-
-// // Random Function
-// // From Underscorejs.org
-// tim.random = function (min, max) {
-//                 if (max == null) {
-//                         max = min;
-//                         min = 0;
-//                 }
-//     return min + Math.floor(Math.random() * (max - min + 1));
-// };
-
-
 
 //Coding that uses the "for" loop to access an array of members of my family
 var i;
 var myFamily = ["Mike", "Bindy", "Shane", "Chance", "Tara"];
 for (i = 0; i < myFamily.length; i++) {
+
+console.log (myFamily[i]);
+};
+
+
+//Coding that uses the "for" loop to access just my brother, sister and me
+var i;
+var myFamily = ["Mike", "Bindy", "Shane", "Chance", "Tara"];
+for (i = 2; i < myFamily.length; i++) {
 
 console.log (myFamily[i]);
 };
@@ -58,7 +26,7 @@ myFamily.reverse();     
 console.log (myFamily);
 
 
-//Coding that accesses objects inside an array and prints out by object number.
+//Coding that accesses objects (each member of my family) inside an array and prints out by object number.
 var familyMember = [
 	{
 	firstName: "Mike",
@@ -94,7 +62,6 @@ var familyMember = [
 	age: 35,
 	role: "youngest child"
 	},
-
 ];
 
 console.log (familyMember[0].firstName + " " + familyMember[0].lastName + " is " + familyMember[0].age + ", and " + familyMember[0].firstName + " is " + "the " + familyMember[0].role);
@@ -104,9 +71,34 @@ console.log (familyMember[3].firstName + " " + familyMember[3].lastName + " is "
 console.log (familyMember[4].firstName + " " + familyMember[4].lastName + " is " + familyMember[4].age + ", and " + familyMember[4].firstName + " is " + "the " + familyMember[4].role);
 
 
+//applies a forEach loop to print out the ages of everyone
+familyMember.forEach(function (item){
+	console.log(item.age);
+	});
+
+//applies a filter to print out the roles of everyone
+familyMember.filter(function (item){
+	console.log(item.role);
+	});
 
 
-//Function that returns brothers + a string of stuff 
+	// 	if (familyMember.age > 40) {
+ //    return "old fart";
+ //    console.log (familyMember.firstName);
+	// 	} else {
+ //    return "young thing";
+	// 		}
+
+	// console.log (familyMember.firstName);
+
+//adds the next generation to the family, my nieces and nephew
+var additionalFamily = ["Mike", "Bindy", "Shane", "Chance", "Tara"];
+additionalFamily.push("Ty Alexander", "Mati Jean", "Povey Love"); 
+console.log (additionalFamily);
+
+
+
+//Function that returns brothers + a string of information
 var a = "Shane";
 var b = "Chance";
 var x = function (a, b) {
@@ -116,12 +108,12 @@ var brothers = x(a, b);
 console.log (brothers);
 
 
-//Function that returns siblings array in reverse
+//Function that returns siblings' array in reverse
 var siblings = ["Shane", "Chance", "Tara"];
 	siblings.reverse();
     console.log (siblings);     
 
-//Function that returns siblings array in reverse
+//Function that returns parents' array in reverse
 var parents = ["Mike", "Bindy"];
 	parents.reverse();
     console.log (parents);   
