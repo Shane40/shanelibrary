@@ -82,20 +82,10 @@ familyMember.filter(function (item){
 	});
 
 
-	// 	if (familyMember.age > 40) {
- //    return "old fart";
- //    console.log (familyMember.firstName);
-	// 	} else {
- //    return "young thing";
-	// 		}
-
-	// console.log (familyMember.firstName);
-
 //adds the next generation to the family, my nieces and nephew
 var additionalFamily = ["Mike", "Bindy", "Shane", "Chance", "Tara"];
 additionalFamily.push("Ty Alexander", "Mati Jean", "Povey Love"); 
 console.log (additionalFamily);
-
 
 
 //Function that returns brothers + a string of information
@@ -113,6 +103,7 @@ var siblings = ["Shane", "Chance", "Tara"];
 	siblings.reverse();
     console.log (siblings);     
 
+
 //Function that returns parents' array in reverse
 var parents = ["Mike", "Bindy"];
 	parents.reverse();
@@ -124,7 +115,7 @@ function myFunction() {
     document.getElementById("blattMath").innerHTML = ((Math.random() * 10) + 1);
 }
 
-//Function that says something
+//Function that pops up the Blatt names at the push of a button
 function greetings() {
        alert("Mike, Bindy, Shane, Chance and Tara");
       };
