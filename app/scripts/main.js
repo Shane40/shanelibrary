@@ -32,35 +32,40 @@ var familyMember = [
 	firstName: "Mike",
 	lastName: "Blatt",
 	age: 68,
-	role: "dad"
+	role: "dad",
+	occupation: "business owner"
 	},
 	
 	{
 	firstName: "Bindy",
 	lastName: "Blatt",
 	age: 70,
-	role: "mom"
+	role: "mom",
+	occupation: "business owner"
 	},
 
 	{
 	firstName: "Shane",
 	lastName: "Blatt",
 	age: 40,
-	role: "oldest child"
+	role: "oldest child",
+	occupation: "TIY student"
 	},
 
 	{
 	firstName: "Chance",
 	lastName: "Blatt",
 	age: 38,
-	role: "middle child"
+	role: "middle child",
+	occupation: "business owner"
 	},
 
 	{
 	firstName: "Tara",
 	lastName: "Blatt Carter",
 	age: 35,
-	role: "youngest child"
+	role: "youngest child",
+	occupation: "stay-at-home mom"
 	},
 ];
 
@@ -81,6 +86,10 @@ familyMember.filter(function (item){
 	console.log(item.role);
 	});
 
+//applies a forEach to print out the occupations of each person
+familyMember.forEach(function (work) {
+	console.log (work.occupation);
+});
 
 //adds the next generation to the family, my nieces and nephew
 var additionalFamily = ["Mike", "Bindy", "Shane", "Chance", "Tara"];
@@ -113,9 +122,49 @@ var parents = ["Mike", "Bindy"];
 //Function that spits back a random number in the button. Oh what fun!
 function myFunction() {
     document.getElementById("blattMath").innerHTML = ((Math.random() * 10) + 1);
-}
+};
 
 //Function that pops up the Blatt names at the push of a button
 function greetings() {
        alert("Mike, Bindy, Shane, Chance and Tara");
       };
+
+
+//Practice work on functions after 2/8/15 meeting with Tim
+var myFunction = function (smurf) {
+
+};
+
+myFunction('Hello, function. You are one tough cookie'); // this "calls" the function
+
+//A deeper dive with arrays
+
+var people = [
+  {
+    name: 'Shane',
+    likes: ['pizza', 'wings', 'tacos'],
+    hobbies: ['tennis', 'bowling', 'gym']
+  },
+  {
+    name: 'Chance',
+    likes: ['cake', 'bbq', 'cola'],
+    hobbies: ['cooking', 'cleaning', 'being a pain']
+  },
+  {
+    name: 'Tara',
+    likes: ['hummus', 'onions', 'pie'],
+    hobbies: ['crossfit', 'cooking', 'being a mom']
+  }
+];
+
+people.forEach( function (person) {
+    	console.log(person.likes);
+    });
+
+
+
+
+
+
+
+

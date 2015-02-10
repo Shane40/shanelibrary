@@ -7,6 +7,7 @@ body {
   background: #fafafa;
   font-family: 'Roboto', sans-serif;
   color: black;
+  background: white;
 }
 
 .blatts {
@@ -24,18 +25,17 @@ body {
     letter-spacing: -1px;
     margin-bottom: 25px;
     margin-top: 25px;
-  }
+      }
   img {
     overflow: auto;
     width: 465px;
     border-radius: 4px;
-  }
-
-button {
-  padding-left: 6px;
-  padding-right: 6px;
-  background: black;
-  color: white;
-  background: -moz-linear-gradient(0% 100% 90deg, #377ad0, #52a8e8);
-  }
+      }
+  button {
+    padding-left: 6px;
+    padding-right: 6px;
+    background: black;
+    color: white;
+    background: -moz-linear-gradient(0% 100% 90deg, #377ad0, #52a8e8);
+      }
 }
